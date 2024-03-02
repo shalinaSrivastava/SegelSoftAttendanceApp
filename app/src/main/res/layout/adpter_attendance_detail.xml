@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="@dimen/_60sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/stoke_gray"
+                android:layout_height="@dimen/_40sdp">
+
+                <TextView
+                    android:id="@+id/date_attendance"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/_3sdp"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:text="21 Aug 2022 "
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:id="@+id/punchIn_attendance"
+
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:text="10:00 am"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_13sdp" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:width="1dp"
+                    android:gravity="center|left"
+                    android:paddingLeft="@dimen/_7sdp"
+                    android:text="6:00pm"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_12sdp" />
+            </LinearLayout>
+
+
+
+
+
+</LinearLayout>

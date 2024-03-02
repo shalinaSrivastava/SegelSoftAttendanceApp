@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:background="@drawable/stoke_gray"
+        android:padding="@dimen/_7sdp"
+        android:orientation="vertical"
+    android:layout_margin="@dimen/_5sdp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:gravity="center|left"
+            android:text="Full Day"
+            android:textColor="@color/dark_gray"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp" />
+
+        <TextView
+            android:id="@+id/date_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="15 June 2022"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/reason_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="I am suffering from fever since last 4 days and temperature start to increase at any time...."
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12sdp" />
+
+        <TextView
+            android:id="@+id/type_leave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center|left"
+            android:paddingTop="@dimen/_3sdp"
+            android:text="Sick "
+            android:textColor="@color/yellow"
+            android:textStyle="bold"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+

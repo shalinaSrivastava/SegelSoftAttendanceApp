@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable
+            name="viewModel"
+            type="com.segel.viewModel.activities.LeavesViewModel" />
+    </data>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        tools:context=".ui.activities.LeaveActivity">
+        <FrameLayout
+            android:id="@+id/request_frameLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:background="@color/logo_color"
+            android:orientation="horizontal"
+            android:padding="@dimen/_10sdp"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:onClick="@{() -> viewModel.onClickBack()}"
+                android:layout_width="0dp"
+                android:padding="@dimen/_3sdp"
+                android:layout_weight="1"
+                android:src="@drawable/ic_back_24"
+                android:layout_height="match_parent" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:gravity="center"
+                android:textSize="@dimen/_16sdp"
+                android:textStyle="bold"
+                android:text="Leave' s  History"
+                android:textColor="@color/white"
+                android:layout_height="match_parent" />
+
+            <ImageView
+                android:onClick="@{() -> viewModel.onLeaveRequest()}"
+                android:id="@+id/requestLeaveTv"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:padding="@dimen/_3sdp"
+                android:src="@drawable/ic_baseline_add_box_24"
+                android:layout_height="match_parent" />
+        </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/leaves_rv"
+                android:layout_width="match_parent"
+                android:layout_weight="8"
+                android:layout_margin="@dimen/_10sdp"
+                android:scrollbars="none"
+                android:layout_height="0dp"/>
+
+
+
+    </LinearLayout>
+</layout>
